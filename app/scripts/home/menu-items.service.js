@@ -22,6 +22,10 @@
 			path: 'articles',
 			icon: 'ion-ios-paper-outline'
 		}, {
+			title: 'Wordpress',
+			path: 'wordpress-articles',
+			icon: 'ion-social-wordpress'
+		}, {
 			title: 'Map',
 			path: 'map',
 			icon: 'ion-map'
