@@ -18,6 +18,10 @@
 			path: 'elements',
 			icon: 'ion-android-checkbox-outline'
 		}, {
+			title: 'Articles',
+			path: 'articles',
+			icon: 'ion-ios-paper-outline'
+		}, {
 			title: 'Map',
 			path: 'map',
 			icon: 'ion-map'
