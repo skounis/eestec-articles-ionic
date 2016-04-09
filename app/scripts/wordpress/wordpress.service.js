@@ -51,6 +51,7 @@
 		}
 
 		function getArticle(articleId) {
+			// TODO: Fetch the particular article by using an API call
 			if (articles.length) {
 				return $q.when(_.find(articles, 'id', articleId));
 			} else {
