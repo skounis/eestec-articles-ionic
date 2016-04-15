@@ -58,12 +58,26 @@
 				var deferred = $q.defer();
 
 				getArticles()
-					.then(function() {
+					.then(function(articles) {
 						deferred.resolve(_.find(articles, 'id', articleId));
 					});
 
 				return deferred.promise;
 			}
 		}
+		
+		function getArticleAsync(articleId, function(cb){
+			if (articles.length){
+				var article = _.find(articles, 'id', articleId);
+				cb(article);
+			} else {
+				getArticles()
+					.then(function(articles){
+						var article = _.find(articles, 'id', articleId);
+						cb(article);
+					});
+			}
+			
+		})
 	}
 })();
